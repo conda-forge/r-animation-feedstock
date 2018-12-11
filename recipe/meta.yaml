@@ -21,8 +21,10 @@ build:
 requirements:
   host:
     - r-base
+    - r-magick
   run:
     - r-base
+    - r-magick
     - texlive-core
     - imagemagick
     - ffmpeg
