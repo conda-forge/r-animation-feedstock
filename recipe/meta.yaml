@@ -19,9 +19,8 @@ build:
   skip: true  # [win]
 
 requirements:
-  build:
+  host:
     - r-base
-
   run:
     - r-base
     - texlive-core
