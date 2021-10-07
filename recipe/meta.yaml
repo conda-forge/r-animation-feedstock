@@ -1,4 +1,4 @@
-{% set version = '2.6' %}
+{% set version = "2.7" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/animation_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/animation/animation_{{ version }}.tar.gz
-  sha256: 90293638920ac436e7e4de76ebfd92e1643ccdb0259b62128f16dd0b13245b0a
+  sha256: 88418f1b04ec785963bad492f30eb48b05914e9e5d88c7eef705d949cbd7e469
 
 build:
-  merge_build_host: True  # [win]
-  number: 3
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -40,15 +40,10 @@ test:
 about:
   home: https://yihui.name/animation
   license: GPL
-  summary: Provides functions for animations in statistics, covering topics in probability theory,
-    mathematical statistics, multivariate statistics, non-parametric statistics, sampling
-    survey, linear models, time series, computational statistics, data mining and machine
-    learning. These functions may be helpful in teaching statistics and data analysis.
-    Also provided in this package are a series of functions to save animations to various
-    formats, e.g. Flash, 'GIF', HTML pages, 'PDF' and videos. 'PDF' animations can be
-    inserted into 'Sweave' / 'knitr' easily.
+  summary: Provides functions for animations in statistics, covering topics in probability theory, mathematical statistics, multivariate statistics, non-parametric statistics, sampling survey, linear models, time series, computational statistics, data mining and machine learning. These functions may be helpful in teaching
+    statistics and data analysis. Also provided in this package are a series of functions to save animations to various formats, e.g. Flash, 'GIF', HTML pages, 'PDF' and videos. 'PDF' animations can be inserted into 'Sweave' / 'knitr' easily.
   license_family: GPL
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
