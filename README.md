@@ -1,11 +1,11 @@
-About r-animation
-=================
+About r-animation-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-animation-feedstock/blob/main/LICENSE.txt)
 
 Home: https://yihui.name/animation
 
 Package license: GPL
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-animation-feedstock/blob/main/LICENSE.txt)
 
 Summary: Provides functions for animations in statistics, covering topics in probability theory, mathematical statistics, multivariate statistics, non-parametric statistics, sampling survey, linear models, time series, computational statistics, data mining and machine learning. These functions may be helpful in teaching statistics and data analysis. Also provided in this package are a series of functions to save animations to various formats, e.g. Flash, 'GIF', HTML pages, 'PDF' and videos. 'PDF' animations can be inserted into 'Sweave' / 'knitr' easily.
 
