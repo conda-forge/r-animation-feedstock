@@ -1,6 +1,5 @@
 {% set version = "2.7" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-animation
@@ -13,8 +12,7 @@ source:
   sha256: 88418f1b04ec785963bad492f30eb48b05914e9e5d88c7eef705d949cbd7e469
 
 build:
-  merge_build_host: true  # [win]
-  number: 2
+  number: 3
   noarch: generic
   rpaths:
     - lib/R/lib/
