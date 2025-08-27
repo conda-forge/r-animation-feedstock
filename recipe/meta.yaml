@@ -1,4 +1,4 @@
-{% set version = "2.7" %}
+{% set version = "2.8" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/animation_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/animation/animation_{{ version }}.tar.gz
-  sha256: 88418f1b04ec785963bad492f30eb48b05914e9e5d88c7eef705d949cbd7e469
+  sha256: cb4f6fdd4481aefecec14530cc0d3e8e44d50740a1d3d513ae95fcdb900258da
 
 build:
-  number: 3
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -41,7 +41,7 @@ about:
   summary: Provides functions for animations in statistics, covering topics in probability theory, mathematical statistics, multivariate statistics, non-parametric statistics, sampling survey, linear models, time series, computational statistics, data mining and machine learning. These functions may be helpful in teaching
     statistics and data analysis. Also provided in this package are a series of functions to save animations to various formats, e.g. Flash, 'GIF', HTML pages, 'PDF' and videos. 'PDF' animations can be inserted into 'Sweave' / 'knitr' easily.
   license_family: GPL
-  license_file: 
+  license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
